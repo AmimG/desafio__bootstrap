@@ -35,6 +35,7 @@ a {
   left: 0;
   position: sticky;
   background: linear-gradient(to top, #003487, #001f51);
+  z-index: 2;
 }
 #nav a.navbar-brand {
   display: flex;
@@ -73,13 +74,6 @@ a {
   flex-direction: column;
   padding-block: 20px;
 }
-.header {
-  padding: 5px;
-  margin-block: 20px;
-  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bghd_gsqqef.webp);
-  color: white;
-  text-align: center;
-}
 /*section index*/
 .section__index {
   display: flex;
@@ -91,13 +85,92 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*carrousel*/
+.container__carrousel {
+  width: 50%;
+  display: flex;
+  align-self: center;
+  z-index: 1;
+}
+.carousel-item div {
+  text-align: center;
+}
+.carousel-item a {
+  color: white;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+.carousel-item a:hover {
+  color: #fac200;
+  font-weight: 500;
+  transition-delay: 150ms;
+}
+.container__2 {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+}
+.container__2 div {
+  width: 32%;
+}
+.container__2 img {
+  width: 100%;
+}
+.container__2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.container__2 a:hover {
+  color: #fac200;
+  font-weight: 500;
+  transition-delay: 300ms;
+}
+.container__3 {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+}
+.container__3 div {
+  width: 32%;
+}
+.container__3 img {
+  width: 100%;
+}
+.container__3 a {
+  color: #00296b;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.container__3 a:hover {
+  color: #a714f6;
+  font-weight: 500;
+  transition-delay: 300ms;
+}
+.container__3 .v2 {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.container__3 .v2:hover {
+  color: #fac200;
+  font-weight: 500;
+  transition-delay: 300ms;
+}
+/*end carrousel*/
 .section__index h2 {
   text-align: center;
   color: white;
   font-weight: 400;
   width: 25%;
   align-self: center;
-  border-bottom: solid;
+  border-bottom: solid 1px;
   font-size: 2.5rem;
 }
 .section__index-w {
@@ -110,91 +183,12 @@ a {
 }
 .section__index-w h2 {
   text-align: center;
-  color: white;
+  color: #00296b;
   font-weight: 400;
   width: 25%;
   align-self: center;
-  border-bottom: solid;
+  border-bottom: solid 1px;
   font-size: 2.5rem;
-}
-.div_index {
-  display: flex;
-  padding: 10px;
-  align-self: center;
-  justify-content: space-evenly;
-  width: 80%;
-}
-.article__index {
-  width: 40%;
-  display: flex;
-}
-.article__index a {
-  text-align: center;
-  align-self: center;
-  margin: auto;
-  text-decoration: none;
-  font-size: 2.2rem;
-  color: white;
-}
-.article__index a:hover {
-  color: #fac200;
-  font-weight: 500;
-  transition-delay: 150ms;
-}
-.div_index2 {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-}
-/*article index2*/
-.article__index2 {
-  width: 40%;
-  align-self: center;
-  overflow: hidden;
-  background-image: url(../multimedia/images/bghd.webp);
-  padding: 5px;
-  box-shadow: 2px 2px black;
-}
-.article__index2 a {
-  text-align: center;
-  align-self: center;
-  margin: auto;
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-}
-.article__index2 a:hover {
-  color: #fac200;
-  transition-delay: 150ms;
-  font-weight: 400;
-}
-.article__index2 img {
-  margin-bottom: 5px;
-}
-.div_index3 {
-  display: flex;
-  justify-content: space-around;
-}
-.div_index3 a {
-  width: 55%;
-}
-.article__mm {
-  width: 80%;
-  box-shadow: 2px 2px black;
-}
-.article__mm:hover {
-  transform: scale(0.985, 0.985);
-  transition: 500ms;
-  cursor: pointer;
-}
-.article__mm2 {
-  width: 40%;
-  box-shadow: 2px 2px black;
-}
-.article__mm2:hover {
-  transform: scale(0.985, 0.985);
-  transition: 500ms;
-  cursor: pointer;
 }
 /*footer*/
 .footer {
@@ -433,9 +427,36 @@ a {
   #nav a img:nth-child(3) {
     display: block;
   }
-  /*header*/
-  .header h1 {
-    font-size: 3.5rem;
+  /*main index*/
+  .section__index h2 {
+    width: auto;
+    font-size: 5vw;
+  }
+  .section__index-w h2 {
+    width: auto;
+  }
+  .container__carrousel {
+    width: 80%;
+  }
+  .carousel-item a {
+    font-size: 2.5vw;
+  }
+  .container__2 {
+    width: 80%;
+  }
+  .container__2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8vw;
+  }
+  .container__3 {
+    width: 80%;
+  }
+  .container__3 a {
+    font-size: 1.8vw;
+  }
+  .container__3 .v2 {
+    font-size: 1.8vw;
   }
   /*footer*/
   .footer__legal span {
@@ -519,6 +540,39 @@ a {
   }
 }
 @media (max-width: 585px) {
+  /*main*/
+  /*main index*/
+  .section__index h2 {
+    width: auto;
+    font-size: 6.5vw;
+  }
+  .section__index-w h2 {
+    width: auto;
+    font-size: 6.5vw;
+  }
+  .container__carrousel {
+    width: 100%;
+  }
+  .carousel-item a {
+    font-size: 4vw;
+  }
+  .container__2 {
+    width: 100%;
+  }
+  .container__2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+  }
+  .container__3 {
+    width: 100%;
+  }
+  .container__3 a {
+    font-size: 3vw;
+  }
+  .container__3 .v2 {
+    font-size: 3vw;
+  }
   /*footer*/
   .footer h4 {
     font-size: 1.6rem;
@@ -549,6 +603,7 @@ a {
   .header h1 {
     font-size: 2rem;
   }
+  /*main*/
   /*footer*/
   .footer {
     display: flex;
