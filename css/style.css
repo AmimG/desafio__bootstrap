@@ -86,7 +86,7 @@ a {
   flex-direction: column;
   align-self: center;
   padding: 10px;
-  width: 60%;
+  width: 100%;
   background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bgnav_fk4wh2.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +105,7 @@ a {
   flex-direction: column;
   align-self: center;
   padding: 10px;
-  width: 60%;
+  width: 100%;
   background-color: white;
 }
 .section__index-w h2 {
