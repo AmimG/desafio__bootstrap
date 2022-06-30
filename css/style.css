@@ -74,6 +74,20 @@ a {
   flex-direction: column;
   padding-block: 20px;
 }
+.header {
+  padding: 5px;
+  margin-block: 30px;
+  display: flex;
+  justify-content: center;
+  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bghd_gsqqef.webp);
+  color: white;
+}
+.header__div {
+  align-self: center;
+  text-align: center;
+  overflow: hidden;
+  width: auto;
+}
 /*section index*/
 .section__index {
   display: flex;
@@ -189,6 +203,153 @@ a {
   align-self: center;
   border-bottom: solid 1px;
   font-size: 2.5rem;
+}
+/*formulario contacto-perfil*/
+.main__ctc {
+  width: auto;
+  display: flex;
+  margin-bottom: 30px;
+}
+.section__ctc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.article__ctc {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-block: 10px;
+}
+.article__ctc h3 {
+  text-align: center;
+  align-self: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+  font-weight: 400;
+  width: 20%;
+  border-bottom: solid;
+}
+.form__ctc {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.form__ctc2 {
+  width: 40%;
+  padding: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bgnav_fk4wh2.webp);
+  box-shadow: 2px 2px black;
+}
+.form__ctc3 {
+  align-self: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 400;
+}
+.form__ctc3 label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.form__ctc3 input {
+  box-shadow: 3px 3px black;
+  margin-bottom: 10px;
+  border-style: none;
+}
+.form__ctc3 textarea {
+  box-shadow: 3px 3px black;
+  border-style: none;
+  margin-bottom: 10px;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 80%;
+  min-height: 60%;
+}
+.form__button {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  height: 25px;
+  background-color: beige;
+  box-shadow: 3px 3px black;
+}
+.button span {
+  margin: 25px;
+}
+.button:hover {
+  background-color: green;
+  transition: 300ms;
+}
+/*formulario contacto dirección*/
+.form__addrs {
+  width: 40%;
+  padding: 20px;
+  align-self: center;
+  display: flex;
+  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bgnav_fk4wh2.webp);
+  box-shadow: 2px 2px black;
+  overflow: hidden;
+}
+.form__addrs2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px black;
+}
+/*formulario perfil*/
+.form__perfil {
+  width: 25%;
+  padding: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bghd_gsqqef.webp);
+  box-shadow: 2px 2px black;
+}
+.form__perfil2 {
+  align-self: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.form__perfil2 label {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.form__perfil2 input {
+  box-shadow: 2px 2px black;
+  margin-bottom: 10px;
+  border-style: none;
+}
+/*formulario img perfil*/
+.form__img {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*formulario checkbox perfil*/
+.form__checkbox {
+  display: flex;
+}
+.form__checkbox input {
+  margin-right: 10px;
 }
 /*footer*/
 .footer {
@@ -457,6 +618,33 @@ a {
   }
   .container__3 .v2 {
     font-size: 1.8vw;
+  }
+  /*contacto-perfil*/
+  .article__ctc h3 {
+    width: auto;
+  }
+  .form__ctc {
+    width: 100%;
+  }
+  .form__ctc2 {
+    width: 85%;
+  }
+  .form__ctc3 {
+    width: 80%;
+  }
+  .button span {
+    margin: 25px;
+  }
+  /*formulario contacto dirección*/
+  .form__addrs {
+    width: 85%;
+  }
+  .form__addrs2 {
+    width: 100%;
+  }
+  /*formulario perfil*/
+  .form__perfil {
+    width: 85%;
   }
   /*footer*/
   .footer__legal span {
