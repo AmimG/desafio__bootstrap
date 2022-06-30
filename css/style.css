@@ -34,7 +34,7 @@ a {
   top: 0;
   left: 0;
   position: sticky;
-  background: linear-gradient(to bottom, #003487, #003a96);
+  background: linear-gradient(to top, #003487, #001f51);
 }
 #nav a.navbar-brand {
   display: flex;
@@ -68,8 +68,10 @@ a {
   margin-inline: 5px;
 }
 /*main index*/
-main {
-  height: 100vh;
+.bg__main {
+  display: flex;
+  flex-direction: column;
+  padding-block: 20px;
 }
 .header {
   padding: 5px;
@@ -82,11 +84,31 @@ main {
 .section__index {
   display: flex;
   flex-direction: column;
+  align-self: center;
   padding: 10px;
-  margin-bottom: 40px;
-  background-image: url(../multimedia/images/bg.webp);
+  width: 60%;
+  background-image: url(https://res.cloudinary.com/dgqkcp16g/image/upload/v1656368575/bgnav_fk4wh2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section__index h2 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  width: 25%;
+  align-self: center;
+  border-bottom: solid;
+  font-size: 2.5rem;
+}
+.section__index-w {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px;
+  width: 60%;
+  background-color: white;
+}
+.section__index-w h2 {
   text-align: center;
   color: white;
   font-weight: 400;
@@ -178,7 +200,7 @@ main {
 .footer {
   width: auto;
   bottom: 0;
-  background: linear-gradient(to bottom, #2d3242, #1a1d26);
+  background: linear-gradient(to top, #003487, #001f51);
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -190,7 +212,7 @@ main {
 }
 .footer h4 {
   margin-bottom: 20px;
-  color: #0059e8;
+  color: #08b7c3;
 }
 /*footer dirección*/
 .footer__addrs {
@@ -201,7 +223,7 @@ main {
 }
 .footer__addrs address {
   font-style: normal;
-  color: #0059e8;
+  color: #08b7c3;
 }
 /*footer redes*/
 .footer__redes {
@@ -340,7 +362,6 @@ main {
   .footer h4 {
     margin: 10px;
     font-size: 2rem;
-    color: #0059e8;
   }
   /*footer dirección*/
   .footer__addrs {
@@ -537,7 +558,6 @@ main {
   }
   .footer h4 {
     margin-bottom: 5px;
-    color: #0059e8;
     font-size: 2rem;
     border-bottom: #004cc7 solid 1px;
   }
